@@ -1,1 +1,4 @@
 node_modules/
+_assets/
+public/
+npm-debug.log

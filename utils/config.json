@@ -1,0 +1,26 @@
+{
+  "paths": {
+    "root": {
+      "bundle": "",
+      "staging": ""
+    },
+    "assets": [
+      "app/assets/**"
+    ],
+    "css": {
+      "app": "app/styles/main.sass",
+      "vendor": [
+        "node_modules/bootstrap/dist/css/bootstrap.min.css"
+      ]
+    },
+    "js": {
+      "app": "app/scripts/**/*.js",
+      "vendor": [
+        "node_modules/angular/angular.min.js"
+      ]
+    }
+  },
+  "messages" : {
+    "intro" : "Run 'npm run help' to list available tasks"
+  }
+}

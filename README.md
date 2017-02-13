@@ -5,5 +5,13 @@
 - Design
 - Form Responses
 
+##Framework:
+AngularJS v1.x: https://angularjs.org/
+
+##Unit Testing:
+Karma
+
+
+
 ###BackEnd:
-- PHP mailing conection
+- PHP mailing conection: http://php.net/manual/en/function.mail.php
