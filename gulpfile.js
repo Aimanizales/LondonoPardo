@@ -38,7 +38,7 @@ gulp.task('scripts:vendor', function () {
 
 gulp.task('server:connect', function() {
   connect.server({
-    root: 'app',
+    root: 'public',
     livereload: true
   });
 });

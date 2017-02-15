@@ -1,3 +1,20 @@
 body{
-  background-color: gray;
+  background-color: #eee;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+header{
+  background-color: white;
+}
+
+main{
+  border: thin solid;
+  min-height: 600px;
+}
+
+footer{
+  background-color: darkgray;
+  padding: 5rem;
+  font-size: 2rem;
 }
