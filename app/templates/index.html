@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecatApp">
 <head>
   <meta charset="UTF-8">
   <title>Londoño Pardo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/vendor.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <script src="js/vendor.js"></script>
 </head>
 <body>
   <header class="container-fluid">
-    <h1>Londoño Pardo</h1>
+    <!--<h1>Londoño Pardo</h1>-->
   </header>
-  <main class="container">
-    content here
-
-    <div class="jumbotron">
+  <main class="container" ng-controller="PhoneListController">
+    <!--<div class="jumbotron">
       <h1>Hello, world!</h1>
       <p>...</p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-    </div>
+    </div>-->
+
+    phones:
+    <ul>
+      <li ng-repeat="phone in phones">
+        <span>{{phone.name}}</span>
+        <p>{{phone.snippet}}</p>
+      </li>
+    </ul>
+    <p>Total number of phones: {{phones.length}}</p>
+
   </main>
   <footer class="container-fluid">
     <div class="container">
       Footer here
     </div>
   </footer>
-  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

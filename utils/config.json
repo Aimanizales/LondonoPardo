@@ -4,11 +4,9 @@
       "bundle": "",
       "staging": ""
     },
-    "assets": [
-      "app/assets/**"
-    ],
+    "assets": "app/assets/**",
     "css": {
-      "app": "app/styles/main.sass",
+      "app": "app/styles/main.scss",
       "vendor": [
         "node_modules/bootstrap/dist/css/bootstrap.min.css"
       ]
@@ -18,6 +16,9 @@
       "vendor": [
         "node_modules/angular/angular.min.js"
       ]
+    },
+    "html": {
+      "app": "app/templates/**/*.html"
     }
   },
   "messages" : {
