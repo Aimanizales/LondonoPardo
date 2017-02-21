@@ -19,6 +19,9 @@
     },
     "html": {
       "app": "app/templates/**/*.html"
+    },
+    "data": {
+      "app": "app/data/**/*.json"
     }
   },
   "messages" : {

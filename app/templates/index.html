@@ -18,25 +18,27 @@
 </head>
 <body>
   <header class="container-fluid">
-    <!--<h1>Londoño Pardo</h1>-->
+    <h1>Londoño Pardo</h1>
   </header>
+  <phone-list></phone-list>
   <main class="container" ng-controller="PhoneListController">
     <!--<div class="jumbotron">
       <h1>Hello, world!</h1>
       <p>...</p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
     </div>-->
-
-    phones:
+    Component:
+    
+    
+    Here :
     <ul>
       <li ng-repeat="phone in phones">
         <span>{{phone.name}}</span>
         <p>{{phone.snippet}}</p>
       </li>
     </ul>
-    <p>Total number of phones: {{phones.length}}</p>
-
   </main>
+  
   <footer class="container-fluid">
     <div class="container">
       Footer here

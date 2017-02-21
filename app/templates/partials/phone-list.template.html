@@ -1,0 +1,20 @@
+This is a template.html:
+<p>
+  Search:
+  <input ng-model="$ctrl.query">
+</p>
+
+<p>
+  Sort by:
+  <select ng-model="$ctrl.orderProp">
+    <option value="name">Alphabetical</option>
+    <option value="age">Newest</option>
+  </select>
+</p>
+
+<ul style="border: thin solid rebeccapurple">
+  <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+    <span>{{phone.name}}</span>
+    <p>{{phone.snippet}}</p>
+  </li>
+</ul>
