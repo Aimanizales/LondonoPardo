@@ -7,6 +7,7 @@
 
 ##Framework:
 AngularJS v1.x: https://angularjs.org/
+https://docs.angularjs.org/tutorial/step_09
 
 ##Unit Testing:
 Karma
@@ -15,3 +16,4 @@ Karma
 
 ###BackEnd:
 - PHP mailing conection: http://php.net/manual/en/function.mail.php
+

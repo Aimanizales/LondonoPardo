@@ -12,9 +12,18 @@ This is a template.html:
   </select>
 </p>
 
-<ul style="border: thin solid rebeccapurple">
-  <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-    <span>{{phone.name}}</span>
-    <p>{{phone.snippet}}</p>
-  </li>
-</ul>
+<div class="row">
+  <div class="col-sm-4 col-md-3" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+    <div class="thumbnail">
+      <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}">
+      <div class="caption">
+        <h3>{{phone.name}}</h3>
+        <p>{{phone.snippet}}</p>
+        <h4 class="text-right">{{phone.price | currency}}</h4>
+        <p class="text-right">
+          <a href="#" class="btn btn-default btn-sm" role="button">Agregar</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

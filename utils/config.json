@@ -14,7 +14,8 @@
     "js": {
       "app": "app/scripts/**/*.js",
       "vendor": [
-        "node_modules/angular/angular.min.js"
+        "node_modules/angular/angular.min.js",
+        "node_modules/angular-route/angular-route.min.js"
       ]
     },
     "html": {

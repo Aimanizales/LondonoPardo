@@ -64,7 +64,7 @@ gulp.task('watch', function () {
   gulp.watch(['./app/templates/**/*.html'], ['html']);
   gulp.watch(['./app/styles/**/*.scss'], ['styles:sass']);
   gulp.watch(['./app/scripts/**/*.js'], ['scripts:js']);
-  gulp.watch(['./data/**/*.json'], ['data']);
+  gulp.watch(['./app/data/**/*.json'], ['data']);
 });
 
 gulp.task('default', [
