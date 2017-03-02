@@ -1,27 +1,4 @@
-$lp-gray: #d1d1d1;
-
-html{
-  font-size: 12px;
-}
-body{
-  font-family: 'Montserrat', sans-serif;
-}
-
-header{
-  background-color: $lp-gray;
-
-  h2{
-    font-size: 1.5rem;
-  }
-}
-
-main{
-  // border: thin solid;
-  min-height: 600px;
-}
-
-footer{
-  background-color: black;
-  padding: 5rem;
-  font-size: 2rem;
-}
+@import 
+  '_bootstrap-custom',
+  '_variables',
+  '_layout';

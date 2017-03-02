@@ -6,10 +6,7 @@
     },
     "assets": "app/assets/**",
     "css": {
-      "app": "app/styles/main.scss",
-      "vendor": [
-        "node_modules/bootstrap/dist/css/bootstrap.min.css"
-      ]
+      "app": "app/styles/main.scss"
     },
     "js": {
       "app": "app/scripts/**/*.js",

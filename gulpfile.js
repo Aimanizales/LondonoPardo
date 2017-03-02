@@ -25,6 +25,7 @@ gulp.task('styles:sass', function () {
 
 gulp.task('styles:vendor', function () {
   gulp.src(PATHS.css.vendor)
+    .pipe(sass().on('error', sass.logError))
     .pipe(concat('vendor.css'))
     .pipe(gulp.dest('./public/css'));
 });
@@ -68,7 +69,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', [
-  'styles:vendor', 
+  //'styles:vendor', 
   'styles:sass', 
   'scripts:vendor',
   'scripts:js',

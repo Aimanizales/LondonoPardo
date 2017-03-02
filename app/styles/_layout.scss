@@ -1,0 +1,92 @@
+html{
+  font-size: 12px;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+header{
+  //height: 190px;
+  h1{
+      display: none;
+  }
+}
+
+main{
+  min-height: 600px;
+  background-color: $lp-gray;
+}
+
+.nav{
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+
+    @media (min-width: $screen-sm-min) {
+        background-color: transparent;
+        position: relative;
+    }
+
+    &-main{
+        
+        @media (min-width: $screen-sm-min) {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+    a{
+        color: $dk-gray;
+        line-height: 4rem;
+        font-size: 2rem;
+        text-align: right;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        &.selected{
+          color: $lp-gold; 
+        }
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+footer{
+  background-color: black;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+.lp-logo{
+  width: 57px;
+  height: 60px;
+  background-image: url('../assets/LP-logo-mobile.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin: 10px 0;
+
+  @media (min-width: $screen-sm-min) {
+    width: 190px;
+    height: 145px;
+    margin: 10px auto;
+    background-image: url('../assets/LP-logo.png');
+  }
+
+  &.lp-logo-footer{
+    background-image: url('../assets/LP-logo-footer-mobile.png');
+
+    @media (min-width: $screen-sm-min) {
+      background-image: url('../assets/LP-logo-footer.png');
+    }
+  }
+}
