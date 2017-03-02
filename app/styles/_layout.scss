@@ -9,7 +9,7 @@ body{
 header{
   //height: 190px;
   h1{
-      display: none;
+    display: none;
   }
 }
 
@@ -19,45 +19,57 @@ main{
 }
 
 .nav{
-    background-color: black;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
 
-    @media (min-width: $screen-sm-min) {
-        background-color: transparent;
-        position: relative;
-    }
+  @media (min-width: $screen-md-min) {
+    background-color: transparent;
+    position: relative;
+  }
 
-    &-main{
-        
-        @media (min-width: $screen-sm-min) {
-            font-size: 2rem;
-            font-weight: 400;
-        }
-    }
+  &-main{
     a{
-        color: $dk-gray;
-        line-height: 4rem;
-        font-size: 2rem;
-        text-align: right;
-
-        @media (min-width: $screen-sm-min) {
-            font-size: 1.3rem;
-            font-weight: 400;
-        }
-
-        &.selected{
-          color: $lp-gold; 
-        }
-
-        &:hover{
-            text-decoration: none;
-        }
+      line-height: 2rem;
+      
+      @media (min-width: $screen-md-min) {
+        font-size: 1.8rem;
+      }
     }
+
+    &-left{
+      text-align: right;
+    }
+
+    &-right{
+      text-align: right;
+      
+      @media (min-width: $screen-md-min) {
+        text-align: left;
+      }   
+    }
+  }
+
+  &-shop{
+    text-align: right;
+  }
+
+  a{
+    color: $dk-gray;
+    text-align: right;
+
+    &.selected{
+      color: $lp-gold; 
+    }
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
 
 footer{
