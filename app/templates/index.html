@@ -12,36 +12,31 @@
   <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-  <!--<link rel="stylesheet" href="css/vendor.css" />-->
   <link rel="stylesheet" href="css/main.css" />
   <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
   <header class="container-fluid">
     <div class="container">
-      <div class="lp-logo"></div>
       <h1 class="text-center">
-        Londoño &amp; Pardo - Jeans    
+        <a href="#!/"><div class="lp-logo"></div></a>
+        <span>Londoño &amp; Pardo - Jeans</span>
       </h1>
-      <nav class="nav">
+      <nav class="nav" title="nav">
         <ul class="row list-unstyled">
-          <li class="col-xs-12 col-md-2"><a href="">acerca de</a></li>
-          <li class="col-xs-12 col-md-2"><a href="">contacto</a></li>
-          <li class="col-xs-12 col-md-2 nav-main nav-main-left"><a href="" class="selected">para hombre</a></li>
-          <li class="col-xs-12 col-md-3 nav-main nav-main-right"><a href="" class="">para mujer</a></li>
-          <li class="col-xs-12 col-md-3 nav-shop"><a href="">mis compras</a></li>
+          <li class="col-xs-12 col-md-4"><a href="#!/contact">contacto</a></li>
+          <li class="col-xs-12 col-md-2 nav-main nav-main-left"><a href="#!/phones" class="selected">para mujer</a></li>
+          <li class="col-xs-12 col-md-3 nav-main nav-main-right"><a href="#!/phones/phone" class="">para hombre</a></li>
+          <li class="col-xs-12 col-md-3 nav-shop"><a href="#!/mis-compras">mis compras</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="container-fluid" ng-controller="PhoneListController">
-    <div class="container">
-    <!--<div class="jumbotron">
-      <h1>Hello, world!</h1>
-      <p>...</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-    </div>-->
-      <phone-list></phone-list>
+  <main class="container-fluid">
+    <div class="container" ng-view>
+
+    <phone-list></phone-list>
       
       <!--Here :
       <ul>
@@ -58,6 +53,5 @@
       <div class="lp-logo lp-logo-footer"></div>
     </div>
   </footer>
-  <script src="js/app.js"></script>
 </body>
 </html>
