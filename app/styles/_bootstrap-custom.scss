@@ -12,7 +12,7 @@
 // Reset and dependencies
     'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print',
-  //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons',
+    'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons',
 
 // Core CSS
     'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding',
@@ -36,22 +36,22 @@
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron',
-  'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails';
+  'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media',
-  //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group',
+  'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/panels',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed',
-  //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells',
-  //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close',
+  'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells',
+  'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close',
 
 // Components w/ JavaScript
-  //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals',
+  'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers',
   //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel',
 
 // Utility classes
-  //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities',
-  //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+  'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities',
+  'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';

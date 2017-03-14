@@ -1,31 +1,56 @@
-<h2>para mujer</h2>
-<p>
-  Search:
-  <input ng-model="$ctrl.query">
-</p>
+<div class="container">
+  <h2 class="title-section">catálogo jeans para {{$ctrl.gender}}</h2>
+  <h4 class="text-center">
+     Tallas disponibles: {{$ctrl.sizes[$ctrl.gender]}}
+  </h4>
 
-<p>
-  Sort by:
-  <select ng-model="$ctrl.orderProp">
-    <option value="name">Alphabetical</option>
-    <option value="age">Newest</option>
-  </select>
-</p>
+  <p>
+    Ordenar:
+    <select ng-model="$ctrl.orderProp">
+      <option value="name">Alfabéticamente</option>
+      <option value="price">Precio</option>
+    </select>
+  </p>
 
-<div class="row">
-  <div class="col-sm-4 col-md-3" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-    <div class="thumbnail">
-      <a href="#!/phones/{{phone.id}}">
+  <p>
+    (*)Las imágenes son de referencia y han sido tomadas de los sitios oficiales.
+  </p>
+
+  <div class="row">
+    <div class="col-sm-4 col-md-3" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+      <div class="thumbnail">
+        <h3>{{phone.name}}</h3>
         <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}">
         <div class="caption">
-          <h3>{{phone.name}}</h3>
           <p>{{phone.snippet}}</p>
-          <h4 class="text-right">{{phone.price | currency}}</h4>
-          <p class="text-right">
-            <a href="#" class="btn btn-default btn-sm" role="button">Agregar</a>
-          </p>
+          <h4 class="text-center">{{phone.price | currency}}</h4>
+          <!--href="#!/para-hombre/{{phone.id}}"-->
+          <!--<p class="thumbnail-info-btn">
+            <a data-toggle="modal" class="btn btn-default btn-xs" role="button">Más información</a>
+          </p>-->
+          <!--<p class="text-right">
+            <a href="" class="btn btn-default btn-sm btn-gold" role="button" ng-click="test()">Agregar</a>
+          </p>-->
         </div>
-      </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

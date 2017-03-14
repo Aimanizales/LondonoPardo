@@ -11,8 +11,11 @@
     "js": {
       "app": "app/scripts/**/*.js",
       "vendor": [
+        "node_modules/jquery/dist/jquery.min.js",
+        "node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js",
         "node_modules/angular/angular.min.js",
-        "node_modules/angular-route/angular-route.min.js"
+        "node_modules/angular-route/angular-route.min.js",
+        "node_modules/angular-local-storage/dist/angular-local-storage.min.js"
       ]
     },
     "html": {

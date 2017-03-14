@@ -17,37 +17,24 @@
   <script src="js/app.js"></script>
 </head>
 <body>
-  <header class="container-fluid">
+  <header class="container-fluid" ng-controller="HeaderController">
     <div class="container">
       <h1 class="text-center">
-        <a href="#!/"><div class="lp-logo"></div></a>
+        <a href="#!/" ng-class="{ active: isActive('/')}"><div class="lp-logo"></div></a>
         <span>Londoño &amp; Pardo - Jeans</span>
       </h1>
       <nav class="nav" title="nav">
         <ul class="row list-unstyled">
-          <li class="col-xs-12 col-md-4"><a href="#!/contact">contacto</a></li>
-          <li class="col-xs-12 col-md-2 nav-main nav-main-left"><a href="#!/phones" class="selected">para mujer</a></li>
-          <li class="col-xs-12 col-md-3 nav-main nav-main-right"><a href="#!/phones/phone" class="">para hombre</a></li>
-          <li class="col-xs-12 col-md-3 nav-shop"><a href="#!/mis-compras">mis compras</a></li>
+          <li class="col-xs-6 col-md-4" ng-class="{ active: isActive('/como-comprar')}"><a href="#!/como-comprar">¿Cómo comprar?</a></li>
+          <li class="col-xs-3 col-md-2 nav-main nav-main-left" ng-class="{ active: isActive('/para-mujer')}"><a href="#!/para-mujer">mujer</a></li>
+          <li class="col-xs-3 col-md-3 nav-main nav-main-right" ng-class="{ active: isActive('/para-hombre')}"><a href="#!/para-hombre">hombre</a></li>
+          <!--<li class="col-xs-12 col-md-3 nav-shop" ng-class="{ active: isActive('/mis-compras')}"><a href="#!/mis-compras">mis compras <span>({{items}})</span></a></li>-->
         </ul>
       </nav>
     </div>
   </header>
-  <main class="container-fluid">
-    <div class="container" ng-view>
-
-    <phone-list></phone-list>
-      
-      <!--Here :
-      <ul>
-        <li ng-repeat="phone in phones">
-          <span>{{phone.name}}</span>
-          <p>{{phone.snippet}}</p>
-        </li>
-      </ul>-->
-    </div>
+  <main class="container-fluid" ng-view>
   </main>
-  
   <footer class="container-fluid">
     <div class="container">
       <div class="lp-logo lp-logo-footer"></div>

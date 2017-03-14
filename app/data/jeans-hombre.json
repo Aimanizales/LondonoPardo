@@ -1,0 +1,121 @@
+[
+  {
+    "id": "levis-az-indig", 
+    "imageUrl": "assets/products/levis-azul-indigo.jpg", 
+    "name": "Levi's 501\u00AE azul índigo", 
+    "price": 199900.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-indust", 
+    "imageUrl": "assets/products/levis-azul-industrial.jpg", 
+    "name": "Levi's 501\u00AE azul industrial", 
+    "price": 199900.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-neg", 
+    "imageUrl": "assets/products/levis-azul-negro.jpg", 
+    "name": "Levi's 501\u00AE azul negro", 
+    "price": 199900.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-hi", 
+    "imageUrl": "assets/products/levis-azul-hielo.jpg", 
+    "name": "Levi's 501\u00AE azul hielo", 
+    "price": 194900.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-hi-nev", 
+    "imageUrl": "assets/products/levis-azul-hielo-nevado.jpg", 
+    "name": "Levi's 501\u00AE azul hielo nevado", 
+    "price": 199900.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-mate", 
+    "imageUrl": "assets/products/levis-azul-mate.jpg", 
+    "name": "Levi's 501\u00AE azul mate", 
+    "price": 185000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-osc", 
+    "imageUrl": "assets/products/levis-azul-oscuro.jpg", 
+    "name": "Levi's 501\u00AE azul oscuro", 
+    "price": 215000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-troq", 
+    "imageUrl": "assets/products/levis-azul-troquel.jpg", 
+    "name": "Levi's 501\u00AE azul troquel", 
+    "price": 215000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-cla", 
+    "imageUrl": "assets/products/levis-azul-claro.jpg", 
+    "name": "Levi's 501\u00AE azul claro", 
+    "price": 215000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-ve-ho-se", 
+    "imageUrl": "assets/products/levis-verde-hoja-seca.jpg", 
+    "name": "Levi's 501\u00AE verde hoja seca", 
+    "price": 185000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-ve-bo", 
+    "imageUrl": "assets/products/levis-verde-botella.jpg", 
+    "name": "Levi's 501\u00AE verde botella", 
+    "price": 185000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-ng-ind", 
+    "imageUrl": "assets/products/levis-negro-industrial.jpg", 
+    "name": "Levi's 501\u00AE negro industrial", 
+    "price": 194900.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-ng-mate", 
+    "imageUrl": "assets/products/levis-negro-mate.jpg", 
+    "name": "Levi's 501\u00AE negro mate", 
+    "price": 199900.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-gr-rat", 
+    "imageUrl": "assets/products/levis-gris-raton.jpg", 
+    "name": "Levi's 501\u00AE gris ratón", 
+    "price": 185000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-cf-tabaco", 
+    "imageUrl": "assets/products/levis-cafe-tabaco.jpg", 
+    "name": "Levi's 501\u00AE café tabaco", 
+    "price": 185000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-vt", 
+    "imageUrl": "assets/products/levis-vino-tinto.jpg", 
+    "name": "Levi's 501\u00AE vino tinto", 
+    "price": 185000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "levis-az-mate", 
+    "imageUrl": "assets/products/levis-rojo-sangre.jpg", 
+    "name": "Levi's 501\u00AE rojo sangre", 
+    "price": 185000.00, 
+    "snippet": ""
+  }
+]

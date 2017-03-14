@@ -1,0 +1,58 @@
+[
+  {
+    "id": "je-211", 
+    "imageUrl": "assets/products/angel-211.jpg", 
+    "name": "Angel Jeans JE 211", 
+    "price": 99000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "je-367", 
+    "imageUrl": "assets/products/angel-367.jpg", 
+    "name": "Angel Jeans JE 367", 
+    "price": 99000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "je-431", 
+    "imageUrl": "assets/products/angel-431.jpg", 
+    "name": "Angel Jeans JE 431", 
+    "price": 99000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "je-610", 
+    "imageUrl": "assets/products/angel-610.jpg", 
+    "name": "Angel Jeans JE 610", 
+    "price": 99000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "je-619", 
+    "imageUrl": "assets/products/angel-619.jpg", 
+    "name": "Angel Jeans JE 619", 
+    "price": 99000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "je-721", 
+    "imageUrl": "assets/products/angel-721.jpg", 
+    "name": "Angel Jeans JE 721", 
+    "price": 99000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "je-724", 
+    "imageUrl": "assets/products/angel-724.jpg", 
+    "name": "Angel Jeans JE 724", 
+    "price": 99000.00, 
+    "snippet": ""
+  },
+  {
+    "id": "je-734", 
+    "imageUrl": "assets/products/angel-734.jpg", 
+    "name": "Angel Jeans JE 734", 
+    "price": 99000.00, 
+    "snippet": ""
+  }
+]

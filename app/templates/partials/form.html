@@ -1,42 +1,16 @@
 <div class="row">
   <div class="col-xs-12 text-center">
     <h2 class="title-section">mis compras</h2>
+    <p>
+      <a class="btn btn-default" href="#!/mis-compras" role="button">1. datos productos</a> <a class="btn btn-default active" href="#!/formulario" role="button">2. datos comprador</a>
+    </p>
   </div>
 </div>
-<hr>
 <div class="row">
   <div class="col-xs-12 col-md-10 col-md-offset-1">
-    <h3 class="title-section-2">productos a comprar</h3>
-    <p>
-      Revisa los productos seleccionados
-    </p>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Producto</th>
-          <th>Valor</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Jean Levi's 501</td>
-          <td>$234,235.00</td>
-          <td><a class="btn btn-default btn-xs" role="button">Remover</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12 col-md-10 col-md-offset-1">
-    <h3 class="title-section-2">información de contacto</h3>
-    <p>
-      Ingresa tus datos para contactarnos contigo.
-    </p>
     <form class="well form-horizontal" action=" " method="post"  id="contact_form">
       <fieldset>
+        <legend>1. Información empresarial</legend>
         <div class="form-group">
           <label class="col-md-4 control-label">Empresa / Fondo de empleados:</label>
           <div class="col-md-6 inputGroupContainer">
@@ -49,6 +23,7 @@
         </div>
       </fieldset>
       <fieldset>
+        <legend>2. Datos comprador/a</legend>
         <div class="form-group">
           <label class="col-md-4 control-label">Nombre(s):</label>  
           <div class="col-md-6 inputGroupContainer">
@@ -116,6 +91,8 @@
       </fieldset>
         
       <fieldset>
+        <legend>3. Forma de pago/envío</legend>
+
         <div class="form-group">
           <label class="col-md-4 control-label">Forma de pago:</label>
           <div class="col-md-4">

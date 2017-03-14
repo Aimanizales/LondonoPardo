@@ -8,33 +8,48 @@ body{
 
 header{
   //height: 190px;
+  border-bottom: 1px solid #ddd;
   h1 span{
     display: none;
   }
 }
 
 main{
-  min-height: 600px;
+  min-height: 400px;
   background-color: $lp-gray;
+
+  &.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 1.7rem;
+}
+
+a:hover, a:active{
+  text-decoration: none;
 }
 
 .nav{
-  background-color: black;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
   width: 100%;
-  padding: 1rem;
 
-  @media (min-width: $screen-md-min) {
-    background-color: transparent;
-    position: relative;
+  a{
+    line-height: 2rem;
+
+    @media (min-width: $screen-xs-min) {
+      line-height: 1rem;
+    }
   }
 
   &-main{
     a{
-      line-height: 2rem;
+      //line-height: 2rem;
       
       @media (min-width: $screen-md-min) {
         font-size: 1.8rem;
@@ -62,20 +77,25 @@ main{
     color: $dk-gray;
     text-align: right;
 
-    &.selected{
-      color: $lp-gold; 
-    }
-
     &:hover{
       text-decoration: none;
     }
   }
+
+  li.active a{
+    color: $lp-gold;
+  }
+}
+
+.title-section{
+  text-align: center;
+  color: $lp-gold;
+  font-weight: 400;
 }
 
 footer{
   background-color: black;
-  padding: 5rem;
-  font-size: 2rem;
+  padding: 2rem;
 }
 
 .lp-logo{
@@ -96,9 +116,22 @@ footer{
 
   &.lp-logo-footer{
     background-image: url('../assets/LP-logo-footer-mobile.png');
+    width: 100px;
+    height: 80px;
 
     @media (min-width: $screen-sm-min) {
       background-image: url('../assets/LP-logo-footer.png');
     }
+  }
+}
+
+.btn-gold{
+  background-color: $lp-gold;
+  color: white;
+  border: none;
+
+  &:hover{
+    background-color: darken($lp-gold, 20%);
+    color: white;
   }
 }

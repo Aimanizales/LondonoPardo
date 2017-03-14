@@ -4,12 +4,20 @@
 var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
   'phoneList', 
-  'phoneDetail'
+  'phoneDetail',
+  'LocalStorageModule'
 ]);
 var homeModule = angular.module('homeModule', []);
 var phoneList = angular.module('phoneList', []);
 var phoneDetail = angular.module('phoneDetail', []);
 var phone = angular.module('phone', ['ngResource']);
+
+
+phonecatApp.config(function(localStorageServiceProvider){
+  localStorageServiceProvider
+    .setPrefix('lp')
+    .setStorageType('localStorage');
+})
 
 //init routes:
 phonecatApp.config(['$locationProvider', '$routeProvider',
@@ -19,13 +27,16 @@ phonecatApp.config(['$locationProvider', '$routeProvider',
       when('/', {
         templateUrl: 'partials/home.html'
       }).
-      when('/contact', {
+      when('/como-comprar', {
         templateUrl: 'partials/contact.html'
       }).
-      when('/phones', {
+      when('/para-mujer', {
         template: '<phone-list></phone-list>'
       }).
-      when('/phones/:phoneId', {
+      when('/para-hombre', {
+        template: '<phone-list></phone-list>'
+      }).
+      when('/para-hombre/:phoneId', {
         template: '<phone-detail></phone-detail>'
       }).
       when('/mis-compras', {
@@ -37,6 +48,36 @@ phonecatApp.config(['$locationProvider', '$routeProvider',
   }
 ]);
 
+phonecatApp.controller('HeaderController', ['$scope', '$location', 'localStorageService', function ($scope, $location, localStorageService) {
+  $scope.items = localStorageService.get('items') || 0;
+  //console.log('this.items ===', $scope.items);
+  /*$scope.$watch('hola2', function(value){
+    localStorageService.set('hola2',value);
+    $scope.localStorageDemoValue = localStorageService.get('hola2');
+  });*/
+
+  //$scope.storageType = 'Local storage';
+
+  if (localStorageService.getStorageType().indexOf('session') >= 0) {
+    $scope.storageType = 'Session storage';
+  }
+  if (!localStorageService.isSupported) {
+    $scope.storageType = 'Cookie';
+  }
+
+  /*$scope.$watch(function(){
+    return localStorageService.get(lsItem);
+  }, function(value){
+    $scope.localStorageDemo = value;
+  });*/
+
+  $scope.clearAll = localStorageService.clearAll;
+
+  $scope.isActive = function (viewLocation) { 
+    return viewLocation === $location.path();
+  };
+}]);
+
 phone.factory('Phone', ['$resource', function($resource){
   return $resource('data/:phoneId.json', {}, {
     query: {
@@ -47,18 +88,24 @@ phone.factory('Phone', ['$resource', function($resource){
   });
 }]);
 
-//init components:
 phoneList.component('phoneList', {
     templateUrl: 'partials/phone-list.template.html',
-    controller: function PhoneListController($http) {
-      //El controller define la lógica y data requerida para soportar una vista en ese scope.
-      var self = this;
-      self.orderProp = 'age';
-
-      $http.get('data/phones.json').then(function(response) {
-        self.phones = response.data;
-      });
-    }
+    controller: ['$http', '$location', 
+      function PhoneListController($http, $location) {
+        var self = this;
+        self.orderProp = 'id';
+        self.gender = ($location.path().indexOf('hombre') > 0) ? 'hombre': 'mujer';
+        self.sizes = {
+          'hombre': '28, 29, 30, 31, 32, 33, 34, 36, 38, 40, 42',
+          'mujer': '6, 8, 10, 12, 14'
+        }
+        self.productsPath = 'data/jeans-' + self.gender + '.json';
+        
+        $http.get(self.productsPath).then(function(response) {
+          self.phones = response.data;
+        });
+      }
+    ]
   }
 );
 
