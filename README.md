@@ -1,23 +1,22 @@
-#Londoño Pardo
+# Londoño Pardo
 
-##TBD: 
-###(FrontEnd):
-- Design
-- Form Responses
+Personal project to learn Angular 1.7, NodeJS, Gulp, DB
 
-##Framework:
-AngularJS v1.x: https://angularjs.org/
-https://docs.angularjs.org/tutorial/step_09
-
-##Unit Testing:
-Karma
+## Updates:
+1. Levi's 501 arena $189.900 
+2. Levi's azul mate $189.900
+3. Women's JSON 
 
 
 
-###BackEnd:
+## **To-Do:**
+1. Select products (web storage?).
+2. Template Selected products.
+3. Send email.
+
+
+### References:
 - PHP mailing conection: http://php.net/manual/en/function.mail.php
+- Karma (Unit Testing)
 
 
-Dos nuevas referencias: 
-1) Levi's 501 arena $189.900 
-2) Levi's azul mate $189.900
