@@ -1,58 +1,107 @@
 [
   {
-    "id": "je-211", 
-    "imageUrl": "assets/products/angel-211.jpg", 
-    "name": "Angel Jeans JE 211", 
+    "id": "je-701", 
+    "imageUrl": "assets/products/angel-701.jpg", 
+    "name": "Angel Jeans JE160701", 
     "price": 99000.00, 
-    "snippet": ""
+    "snippet": "Tallas disponibles: 6, 8, 12"
   },
   {
-    "id": "je-367", 
-    "imageUrl": "assets/products/angel-367.jpg", 
-    "name": "Angel Jeans JE 367", 
+    "id": "je-702", 
+    "imageUrl": "assets/products/angel-702.jpg", 
+    "name": "Angel Jeans JE160702", 
     "price": 99000.00, 
-    "snippet": ""
+    "snippet": "Tallas disponibles: 6, 16"
   },
   {
-    "id": "je-431", 
-    "imageUrl": "assets/products/angel-431.jpg", 
-    "name": "Angel Jeans JE 431", 
+    "id": "je-703", 
+    "imageUrl": "assets/products/angel-703.jpg", 
+    "name": "Angel Jeans JE160703", 
     "price": 99000.00, 
-    "snippet": ""
+    "snippet": "Tallas disponibles: 6, 8, 10, 12, 14"
   },
   {
-    "id": "je-610", 
-    "imageUrl": "assets/products/angel-610.jpg", 
-    "name": "Angel Jeans JE 610", 
+    "id": "je-705", 
+    "imageUrl": "assets/products/angel-705.jpg", 
+    "name": "Angel Jeans JE160705", 
     "price": 99000.00, 
-    "snippet": ""
+    "snippet": "Tallas disponibles: 6, 8, 10, 12"
   },
   {
-    "id": "je-619", 
-    "imageUrl": "assets/products/angel-619.jpg", 
-    "name": "Angel Jeans JE 619", 
+    "id": "je-708", 
+    "imageUrl": "assets/products/angel-708.jpg", 
+    "name": "Angel Jeans JE160708", 
     "price": 99000.00, 
-    "snippet": ""
+    "snippet": "Tallas disponibles: 6, 8"
+  },
+  {
+    "id": "je-716", 
+    "imageUrl": "assets/products/angel-716.jpg", 
+    "name": "Angel Jeans JE160716", 
+    "price": 99000.00, 
+    "snippet": "Tallas disponibles: 6, 8, 10"
+  },
+  {
+    "id": "je-718", 
+    "imageUrl": "assets/products/angel-718.jpg", 
+    "name": "Angel Jeans JE160718", 
+    "price": 99000.00, 
+    "snippet": "Tallas disponibles: 6, 8, 10, 12"
   },
   {
     "id": "je-721", 
     "imageUrl": "assets/products/angel-721.jpg", 
-    "name": "Angel Jeans JE 721", 
+    "name": "Angel Jeans Angel Jeans JE 721", 
     "price": 99000.00, 
-    "snippet": ""
+    "snippet": "Tallas disponibles: 6, 8, 10, 12"
   },
   {
-    "id": "je-724", 
-    "imageUrl": "assets/products/angel-724.jpg", 
-    "name": "Angel Jeans JE 724", 
+    "id": "je-722", 
+    "imageUrl": "assets/products/angel-722.jpg", 
+    "name": "Angel Jeans JE160722", 
     "price": 99000.00, 
-    "snippet": ""
+    "snippet": "Tallas disponibles: 6, 8, 10, 12"
   },
   {
-    "id": "je-734", 
-    "imageUrl": "assets/products/angel-734.jpg", 
-    "name": "Angel Jeans JE 734", 
+    "id": "je-727", 
+    "imageUrl": "assets/products/angel-727.jpg", 
+    "name": "Angel Jeans JE160727", 
     "price": 99000.00, 
-    "snippet": ""
+    "snippet": "Tallas disponibles: 6, 8, 10"
+  },
+  {
+    "id": "je-728", 
+    "imageUrl": "assets/products/angel-728.jpg", 
+    "name": "Angel Jeans JE160728", 
+    "price": 99000.00, 
+    "snippet": "Tallas disponibles: 6, 8"
+  },
+  {
+    "id": "je-736", 
+    "imageUrl": "assets/products/angel-736.jpg", 
+    "name": "Angel Jeans JE160736", 
+    "price": 99000.00, 
+    "snippet": "Tallas disponibles: 6, 8"
+  },
+  {
+    "id": "je-737", 
+    "imageUrl": "assets/products/angel-737.jpg", 
+    "name": "Angel Jeans JE160737", 
+    "price": 99000.00, 
+    "snippet": "Tallas disponibles: 6, 8, 10, 12"
+  },
+  {
+    "id": "je-739", 
+    "imageUrl": "assets/products/angel-739.jpg", 
+    "name": "Angel Jeans JE160739", 
+    "price": 99000.00, 
+    "snippet": "Tallas disponibles: 6"
+  },
+  {
+    "id": "je-780", 
+    "imageUrl": "assets/products/angel-780.jpg", 
+    "name": "Angel Jeans JE160780", 
+    "price": 99000.00, 
+    "snippet": "Tallas disponibles: 6, 8"
   }
 ]

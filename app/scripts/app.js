@@ -1,26 +1,26 @@
 'use strict';
 
 //init modules:
-var phonecatApp = angular.module('phonecatApp', [
+var LPjeansApp = angular.module('LPjeansApp', [
   'ngRoute',
   'phoneList', 
-  'phoneDetail',
+  //'phoneDetail',
   'LocalStorageModule'
 ]);
 var homeModule = angular.module('homeModule', []);
 var phoneList = angular.module('phoneList', []);
-var phoneDetail = angular.module('phoneDetail', []);
-var phone = angular.module('phone', ['ngResource']);
+//var phoneDetail = angular.module('phoneDetail', []);
+//var phone = angular.module('phone', ['ngResource']);
 
 
-phonecatApp.config(function(localStorageServiceProvider){
+LPjeansApp.config(function(localStorageServiceProvider){
   localStorageServiceProvider
     .setPrefix('lp')
     .setStorageType('localStorage');
 })
 
 //init routes:
-phonecatApp.config(['$locationProvider', '$routeProvider',
+LPjeansApp.config(['$locationProvider', '$routeProvider',
   function config($locationProvider, $routeProvider){
     $locationProvider.hashPrefix('!');
     $routeProvider.
@@ -48,7 +48,7 @@ phonecatApp.config(['$locationProvider', '$routeProvider',
   }
 ]);
 
-phonecatApp.controller('HeaderController', ['$scope', '$location', 'localStorageService', function ($scope, $location, localStorageService) {
+LPjeansApp.controller('HeaderController', ['$scope', '$location', 'localStorageService', function ($scope, $location, localStorageService) {
   $scope.items = localStorageService.get('items') || 0;
   //console.log('this.items ===', $scope.items);
   /*$scope.$watch('hola2', function(value){
@@ -78,7 +78,7 @@ phonecatApp.controller('HeaderController', ['$scope', '$location', 'localStorage
   };
 }]);
 
-phone.factory('Phone', ['$resource', function($resource){
+/*phone.factory('Phone', ['$resource', function($resource){
   return $resource('data/:phoneId.json', {}, {
     query: {
       method: 'GET',
@@ -86,7 +86,7 @@ phone.factory('Phone', ['$resource', function($resource){
       isArray: true
     }
   });
-}]);
+}]);*/
 
 phoneList.component('phoneList', {
     templateUrl: 'partials/phone-list.template.html',
@@ -97,9 +97,9 @@ phoneList.component('phoneList', {
         self.gender = ($location.path().indexOf('hombre') > 0) ? 'hombre': 'mujer';
         self.sizes = {
           'hombre': '28, 29, 30, 31, 32, 33, 34, 36, 38, 40, 42',
-          'mujer': '6, 8, 10, 12, 14'
+          'mujer': 'por referencia'
         }
-        self.productsPath = 'data/jeans-' + self.gender + '.json';
+        self.productsPath = 'data/jeans-' + self.gender + '.json?nocache=123';
         
         $http.get(self.productsPath).then(function(response) {
           self.phones = response.data;
@@ -109,23 +109,38 @@ phoneList.component('phoneList', {
   }
 );
 
-phoneDetail.component('phoneDetail',{
+LPjeansApp.controller('dayCtrl', function($scope){
+  var dayNames =['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  $scope.day = dayNames[new Date().getDay()];
+  $scope.tomorrow = dayNames[(new Date().getDay() + 1) % 7];
+});
+
+LPjeansApp.directive('highlight', function(){
+  return function(scope, element, attrs){
+    if(scope.day === attrs['highlight']){
+      element.css('color', 'red');
+    }
+  }
+});
+
+/*phoneDetail.component('phoneDetail',{
     templateUrl: 'partials/phone-detail.template.html',
     controller: ['$routeParams', 
-    //'Phone', 
-      function PhoneDetailController($routeParams /*, Phone*/){
+      'Phone', 
+      function PhoneDetailController($routeParams, Phone){
         var self = this;
-        //phoneId = $routeParams.phoneId;
-       /* self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
+        phoneId = $routeParams.phoneId;
+        self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
           self.setImage(phone.images[0]);
         });
 
         self.setImage = function setImage(imageUrl) {
           self.mainImageUrl = imageUrl;
-        };*/
+        };
       }
     ]
-});
+});*/
+
 /*
 describe('Phone', function() {
   var $httpBackend;
