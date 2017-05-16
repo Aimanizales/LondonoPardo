@@ -19,11 +19,11 @@
   <div class="row">
     <div class="col-sm-4 col-md-3" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
       <div class="thumbnail">
-        <h3>{{phone.name}}</h3>
         <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}">
         <div class="caption">
-          <p>{{phone.snippet}}</p>
-          <h4 class="text-center">{{phone.price | currency}}</h4>
+          <h3>Ref: {{phone.name}}</h3>
+          <p>Descripción: {{phone.snippet}}</p>
+          <h4 class="text-right">{{phone.price | currency}}</h4>
           <!--href="#!/para-hombre/{{phone.id}}"-->
           <!--<p class="thumbnail-info-btn">
             <a data-toggle="modal" class="btn btn-default btn-xs" role="button">Más información</a>

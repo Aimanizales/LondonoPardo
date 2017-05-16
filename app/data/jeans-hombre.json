@@ -2,112 +2,128 @@
   {
     "id": "levis-az-industrial", 
     "imageUrl": "assets/products/levis-azul-indigo.jpg", 
-    "name": "Levi's 501\u00AE azul industrial", 
+    "brand": "Levi's 501\u00AE",
+    "name": "Azul Indigo", 
     "price": 199900.00, 
     "snippet": ""
   },
   {
     "id": "levis-az-indust", 
     "imageUrl": "assets/products/levis-azul-industrial.jpg", 
-    "name": "Levi's 501\u00AE azul industrial", 
+    "brand": "Levi's 501\u00AE",
+    "name": "Azul Industrial", 
     "price": 199900.00, 
     "snippet": ""
   },
   {
     "id": "levis-az-neg", 
     "imageUrl": "assets/products/levis-azul-negro.jpg", 
-    "name": "Levi's 501\u00AE azul negro", 
+    "brand": "Levi's 501\u00AE",
+    "name": "Azul Negro", 
     "price": 214900.00, 
     "snippet": ""
   },
   {
     "id": "levis-az-hi", 
     "imageUrl": "assets/products/levis-azul-hielo.jpg", 
-    "name": "Levi's 501\u00AE azul hielo", 
+    "brand": "Levi's 501\u00AE",
+    "name": "Azul Hielo", 
     "price": 209900.00, 
     "snippet": ""
   },
   {
     "id": "levis-az-hi-nev", 
     "imageUrl": "assets/products/levis-azul-hielo-nevado.jpg", 
-    "name": "Levi's 501\u00AE azul hielo nevado", 
+    "brand": "Levi's 501\u00AE",
+    "name": "azul hielo nevado", 
     "price": 214900.00, 
     "snippet": ""
   },
   {
     "id": "levis-brooklin-720", 
     "imageUrl": "assets/products/levis-azul-mate.jpg", 
-    "name": "Levi's 501\u00AE Brooklin 720", 
+    "brand": "Levi's 501\u00AE",
+    "name": "Brooklin 720", 
     "price": 229900.00, 
     "snippet": ""
   },
   {
     "id": "levis-az-osc", 
     "imageUrl": "assets/products/levis-azul-oscuro.jpg", 
-    "name": "Levi's 501\u00AE azul oscuro", 
+    "brand": "Levi's 501\u00AE",
+    "name": "azul oscuro", 
     "price": 215000.00, 
     "snippet": ""
   },
   {
     "id": "levis-stone-wash", 
     "imageUrl": "assets/products/levis-azul-troquel.jpg", 
-    "name": "Levi's 501\u00AE Stone Wash", 
+    "brand": "Levi's 501\u00AE",
+    "name": "Stone Wash", 
     "price": 215000.00, 
     "snippet": ""
   },
   {
     "id": "levis-ve-ho-se", 
     "imageUrl": "assets/products/levis-verde-hoja-seca.jpg", 
-    "name": "Levi's 501\u00AE verde hoja seca", 
+    "brand": "Levi's 501\u00AE",
+    "name": "verde hoja seca", 
     "price": 189900.00, 
     "snippet": ""
   },
   {
     "id": "levis-ve-bo", 
     "imageUrl": "assets/products/levis-verde-botella.jpg", 
-    "name": "Levi's 501\u00AE verde botella", 
+    "brand": "Levi's 501\u00AE",
+    "name": "verde botella", 
     "price": 189900.00, 
     "snippet": ""
   },
   {
     "id": "levis-ng-ind", 
     "imageUrl": "assets/products/levis-negro-industrial.jpg", 
-    "name": "Levi's 501\u00AE negro industrial", 
+    "brand": "Levi's 501\u00AE",
+    "name": "negro industrial", 
     "price": 209900.00, 
     "snippet": ""
   },
   {
     "id": "levis-ng-mate", 
     "imageUrl": "assets/products/levis-negro-mate.jpg", 
-    "name": "Levi's 501\u00AE negro mate", 
+    "brand": "Levi's 501\u00AE",
+    "name": "negro mate", 
     "price": 214900.00, 
     "snippet": ""
   },
   {
     "id": "levis-gr-rat", 
     "imageUrl": "assets/products/levis-gris-raton.jpg", 
-    "name": "Levi's 501\u00AE gris ratón", 
+    "brand": "Levi's 501\u00AE",
+    "name": "gris ratón", 
     "price": 189900.00, 
     "snippet": ""
   },
   {
     "id": "levis-cf-tabaco", 
     "imageUrl": "assets/products/levis-cafe-tabaco.jpg", 
-    "name": "Levi's 501\u00AE café tabaco", 
+    "brand": "Levi's 501\u00AE",
+    "name": "café tabaco", 
     "price": 189900.00, 
     "snippet": ""
   },
   {
     "id": "levis-vt", 
     "imageUrl": "assets/products/levis-vino-tinto.jpg", 
-    "name": "Levi's 501\u00AE vino tinto", 
+    "brand": "Levi's 501\u00AE",
+    "name": "vino tinto", 
     "price": 189900.00, 
     "snippet": ""
   },
   {
     "id": "levis-rojo-sangre", 
     "imageUrl": "assets/products/levis-rojo-sangre.jpg", 
-    "name": "Levi's 501\u00AE rojo sangre", 
+    "brand": "Levi's 501\u00AE",
+    "name": "rojo sangre", 
     "price": 189900.00, 
     "snippet": ""
   }
