@@ -1,8 +1,8 @@
 <div class="container">
-  <h2 class="title-section">catálogo jeans para {{$ctrl.gender}}</h2>
-  <h4 class="text-center">
-     Tallas disponibles: {{$ctrl.sizes[$ctrl.gender]}}
-  </h4>
+  <h2 class="title-section">catálogo jeans para {{$ctrl.genre}}</h2>
+  <!--<h4 class="text-center">
+     Tallas disponibles: {{$ctrl.sizes[$ctrl.genre]}}
+  </h4>-->
 
   <p>
     Ordenar por:
@@ -17,12 +17,16 @@
   </p>
 
   <div class="row">
-    <div class="col-sm-4 col-md-3" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-      <div class="thumbnail">
-        <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}">
+    <div class="col-sm-4 col-md-3" ng-repeat="phone in $ctrl.phones | orderBy:$ctrl.orderProp" ng-if="phone.genre == $ctrl.genre">
+      <!--<span ng-if="{{phone.genre=='$ctrl.genre'}}">Show it!</span>
+      -->
+      <div class="product thumbnail {{phone.lastCollection}}">
+        <img ng-src="{{phone.imageURL}}" alt="{{phone.reference}}">
         <div class="caption">
-          <h3>Ref: {{phone.name}}</h3>
-          <p>Descripción: {{phone.snippet}}</p>
+          <p class="product-brandname">{{phone.brand}}</p>
+          <h3>{{phone.reference}}</h3>
+          <p>{{phone.description}}</p>
+          <p>Tallas: {{phone.sizes}}</p>
           <h4 class="text-right">{{phone.price | currency}}</h4>
           <!--href="#!/para-hombre/{{phone.id}}"-->
           <!--<p class="thumbnail-info-btn">

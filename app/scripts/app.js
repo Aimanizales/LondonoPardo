@@ -94,15 +94,17 @@ phoneList.component('phoneList', {
       function PhoneListController($http, $location) {
         var self = this;
         self.orderProp = 'id';
-        self.gender = ($location.path().indexOf('hombre') > 0) ? 'hombre': 'mujer';
+        self.genre = ($location.path().indexOf('hombre') > 0) ? 'hombre': 'mujer';
         self.sizes = {
           'hombre': '28, 29, 30, 31, 32, 33, 34, 36, 38, 40, 42',
           'mujer': 'por referencia'
         }
-        self.productsPath = 'data/jeans-' + self.gender + '.json?nocache=123';
+        // self.productsPath = 'data/jeans-' + self.gender + '.json?nocache=123';
+        self.productsPath = 'data/LP_jeans-DB.json?nocache=123';
         
         $http.get(self.productsPath).then(function(response) {
           self.phones = response.data;
+          //console.log(response.data);
         });
       }
     ]

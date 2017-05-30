@@ -1,9 +1,10 @@
-.thumbnail{
+.product{
   padding: 0;
   border-radius: 5px;
   overflow: hidden;
   text-align: left;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  color: $dk-gray;
 
   &-info-btn{
     float: left;
@@ -17,6 +18,7 @@
   }
 
   h3{
+    margin-top: 0;
     font-size: 1.2rem;
     white-space: nowrap;
     overflow: hidden;
@@ -33,6 +35,26 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: $dk-gray;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &-brandname{
+    color: $lp-gold;
+  }
+}
+
+.lastCollection{
+
+  &:before{
+    content:"última colección";
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    position: absolute;
+    border-radius: 0 10px 0 10px;
   }
 }
